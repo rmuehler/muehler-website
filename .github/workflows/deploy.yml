@@ -40,17 +40,16 @@ jobs:
     needs: build
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Download build
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist
       - name: Deploy to FTP
-        if: success()
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /home/www/muehler.net/
-          local-dir: deploy_dist/muehler-website
+          local-dir: deploy_dist/muehler-website/
