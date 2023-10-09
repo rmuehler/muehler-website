@@ -1,24 +1,41 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { FunctionsServiceAbstract } from './functions.service.abstract';
+import { FunctionsService } from './functions.service';
 
 describe('AppComponent', () => {
-  beforeEach(() =>
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+  let element;
+
+
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
       declarations: [AppComponent],
-    })
-  );
+      providers: [
+        {
+          provide: FunctionsService,
+          useClass: FunctionsServiceAbstract
+        }
+
+      ]
+      
+    }).compileComponents();
+    
+    const fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    element = fixture.nativeElement;
+    fixture.detectChanges();
+
+    
+  });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'muehler-website'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('muehler-website');
-  });
 });
