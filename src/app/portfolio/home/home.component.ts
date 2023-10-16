@@ -9,7 +9,7 @@ import { BioService } from '../../core/services/bio.service';
 export class HomeComponent {
   bio$ = this.bioService.getBio();
 
-  respOptions = [
+  respOptions = [ // bootstrap responsive options
     { viewClasses: 'd-none d-md-flex', headingClass: 'display-3', useSmallerHeadings: false },
     { viewClasses: 'd-flex d-md-none', headingClass: '', useSmallerHeadings: true }
   ];
