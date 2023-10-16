@@ -2492,6 +2492,30 @@
     rxjs "^7.0.0"
     tslib "^2.2.0"
 
+"@scullyio/scully-plugin-puppeteer@^2.1.41":
+  version "2.1.41"
+  resolved "https://registry.yarnpkg.com/@scullyio/scully-plugin-puppeteer/-/scully-plugin-puppeteer-2.1.41.tgz#a3cb60c1d50022f31d9a4375dcadb3287afd19eb"
+  integrity sha512-R5DAgHX0HVHXBQv4/wim0U4LQMfvJ8nwNoKiioD8yEAkPgAAsN5YvOEHxQYx8E8hXLZN8I4CQ0VyyGCxDPu4+Q==
+  dependencies:
+    "@angular/common" "12.2.6"
+    "@angular/core" "12.2.6"
+    "@angular/platform-server" "12.2.6"
+    "@sentry/node" "^6.12.0"
+    asciidoctor "^2.2.5"
+    chalk "^4.1.2"
+    chokidar "^3.5.3"
+    compression "^1.7.4"
+    cors "^2.8.5"
+    express "4.17.3"
+    js-yaml "^4.1.0"
+    os "^0.1.2"
+    prismjs "^1.27.0"
+    rxjs "^7.5.4"
+    selfsigned "^2.0.0"
+    tslib "^2.3.1"
+    ws "^8.5.0"
+    zone.js "0.11.4"
+
 "@scullyio/scully@2.1.41":
   version "2.1.41"
   resolved "https://registry.yarnpkg.com/@scullyio/scully/-/scully-2.1.41.tgz#d8817ce393fb47a0e44ce27b2b85c177f22cbf76"
@@ -7615,7 +7639,7 @@ tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@^2.6.2:
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@^2.3.1, tslib@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
