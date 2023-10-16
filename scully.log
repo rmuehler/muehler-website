@@ -56,3 +56,12 @@ live reload will not be available. You can configure a different port in the con
 
 
 
+NOTICE:
+****************************************************************************************
+  This is a development tool for Scully applications.
+  You can ignore the warning (TLS) or run scully with --no-warning
+****************************************************************************************Folder "./scully" doesn't seem to contain custom plugins
+----------------------------------   To discover new routes in the angular app use "npx scully --scanRoutes"----------------------------------Using stored unhandled routes!.
+
+
+

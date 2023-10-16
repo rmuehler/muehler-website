@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ci": "ng build",
+    "build:ci": "ng build && npx scully --project muehler-website",
     "test:ci": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
   "private": true,
