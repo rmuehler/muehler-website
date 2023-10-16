@@ -7,7 +7,7 @@ import { of } from 'rxjs';
 
 describe('FunctionsServiceService', () => {
   let service: FunctionsService;
-  let httpClient : HttpClient
+  let httpClient : HttpClient;
 
   beforeEach(() => {
     TestBed.configureTestingModule({

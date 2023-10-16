@@ -5,6 +5,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FunctionsServiceAbstract } from './functions.service.abstract';
 import { FunctionsService } from './functions.service';
+import { CoreModule } from './core/core.module';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -14,7 +15,7 @@ describe('AppComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, CoreModule, HttpClientTestingModule],
       declarations: [AppComponent],
       providers: [
         {
@@ -23,15 +24,15 @@ describe('AppComponent', () => {
         }
 
       ]
-      
+
     }).compileComponents();
-    
+
     const fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     element = fixture.nativeElement;
     fixture.detectChanges();
 
-    
+
   });
 
   it('should create the app', () => {
