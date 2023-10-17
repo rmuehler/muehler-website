@@ -2484,7 +2484,7 @@
     ws "^8.5.0"
     zone.js "0.11.4"
 
-"@scullyio/ng-lib@2.1.41":
+"@scullyio/ng-lib@2.1.41", "@scullyio/ng-lib@^2.1.41":
   version "2.1.41"
   resolved "https://registry.yarnpkg.com/@scullyio/ng-lib/-/ng-lib-2.1.41.tgz#7c60bb453909d794af7bd51e1b56fff867f87b21"
   integrity sha512-7tq3TKy5iLOhMwVJgqcI+ZaV1UzHVQohFhVzjV3oTmEJQVH6xZ6SIZwbOsLgFx3ABeK9wJQ2us700OV5/9kFlQ==
@@ -2516,7 +2516,7 @@
     ws "^8.5.0"
     zone.js "0.11.4"
 
-"@scullyio/scully@2.1.41":
+"@scullyio/scully@2.1.41", "@scullyio/scully@^2.1.41":
   version "2.1.41"
   resolved "https://registry.yarnpkg.com/@scullyio/scully/-/scully-2.1.41.tgz#d8817ce393fb47a0e44ce27b2b85c177f22cbf76"
   integrity sha512-kyvf8/J7KzcZK84bQV0G0tlrmqw9e7ycNUkmvJVXy4Ur0uLoV0GzjyVy8PFFvo3C9MZYakRiawtetnajmFdzGA==

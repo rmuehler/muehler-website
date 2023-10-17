@@ -17,8 +17,7 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CoreModule
-    // MatSlideToggleModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ci": "ng build && npx scully --project muehler-website",
+    "build:ci": "ng build --configuration production --output-hashing=all",
     "test:ci": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
   "private": true,
@@ -24,6 +24,8 @@
     "@angular/router": "^16.2.9",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@scullyio/init": "^2.1.41",
+    "@scullyio/ng-lib": "^2.1.41",
+    "@scullyio/scully": "^2.1.41",
     "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "bootstrap": "^5.3.2",
     "ngx-bootstrap": "^11.0.2",
